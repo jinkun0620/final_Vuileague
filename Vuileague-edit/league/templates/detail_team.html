@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{{profile.teamname}}
+
+<img src="{{profile.profile_photo.url}}" alt="">
+{{profile.city}}
+{{profile.home}}
+{{profile.member}}
+{{profile.introduce}}
+{% endblock %}

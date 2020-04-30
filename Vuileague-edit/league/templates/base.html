@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="__upper">
+            <div class="__inner">Sign up</div>
+            <div>Log In</div>
+            <div>Log Out</div>
+        </div>
+        <div class="__lower">
+            <div class="__title">
+                <a href="{% url 'index' %}">
+                    <img class="__title_img" src="{% static 'img/title.png' %}" alt="title">
+                    <h3>Vui League</h3>
+                </a>
+            </div>
+            <div class="__nav">
+                <div class="__mainmenu Home">Intro</div>
+                <div class="__mainmenu League_standing"><a href="#">League Standing</a></div>
+                <div class="__mainmenu Matches"><a href="">Matches</a></div>
+                <div class="__mainmenu Teams">Teams</div>
+                <div class="__mainmenu Pitches">Pitches</div>
+                <div class="__mainmenu Teams"><a href="{% url 'make_team' %}">My Teams</a> </div>
+            </div>
+            
+        </div>
+        <hr>
+    </header>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

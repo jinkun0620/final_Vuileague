@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tap menu */
+.container_matchlist {
+    display: block;
+}
+
+.container_matchregister {
+    display: block;
+}
+
+h1 {
+    padding: 1rem 14rem 2rem 14rem;
+}
+/* Filter Bar */
+
+.__innerfilter {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    
+}
+
+.filter_bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20rem;
+    border: 0.1rem solid;
+    border-radius: 20px;
+    
+}
+
+.filter {
+    padding: 0.2rem 0 0.5rem 1.1rem;
+}
+
+.filtermenu {
+    color: blueviolet;
+    font-weight: 700;
+    font-size: .8rem;
+    font-style: italic;
+    padding-top: 0.3rem;
+}
+
+.filtervalue {
+    color: rgb(55, 0, 60);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.filter {
+    border-right : 1px solid black;   
+}
+
+
+
+/* 클릭했을 경우  */
+
+
+
+
+.tap_matches_option {
+    margin: 0 15rem 1rem 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matches_option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+}
+
+.matches_option_list {
+    width: 50%;
+    background-color: yellow;
+    color: rgb(55, 0, 60);
+    font-weight: 700;
+    border-radius: 10px 0 0 10px;
+    border: .5px rgb(210, 210, 210) solid;
+}
+
+.matches_option_register {
+    width: 50%;
+    border-radius: 0px 10px 10px 0px;
+    border: .5px rgb(210, 210, 210) solid;
+}
+
+
+.match_tap_menu {
+    margin: 1rem 22rem;
+}
+
+.tap_match_type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.match_type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+}
+
+.match_type_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    color: blueviolet;
+    font-weight: 700;
+    font-size: 1rem;
+    font-style: italic;
+}
+._5566 {        
+    width: 30%;
+    background-color: rgb(255, 41, 130);
+    color: white;
+    font-weight: 700;
+    border-radius: 10px 0 0 10px;
+    border: .5px rgb(210, 210, 210) solid;
+
+}
+
+._7788 {
+    width: 30%;
+    border-top: .5px rgb(210, 210, 210) solid;
+    border-bottom: .5px rgb(210, 210, 210) solid;
+}
+
+._1111 {
+    width: 30%;
+    border-radius: 0 10px 10px 0;
+    border: .5px rgb(210, 210, 210) solid;
+}
+
+
+.tap_age {
+    display: flex;
+    margin-top: 0.2rem ;
+    }
+
+.age {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+}
+
+.age_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    color: blueviolet;
+    font-weight: 700;
+    font-size: 1rem;
+    font-style: italic;
+}    
+
+.u17 {
+    width: 22.5%;
+    background-color: rgb(255, 41, 130);
+    color: white;
+    font-weight: 700;
+    border-radius: 10px 0 0 10px;
+    border: .5px rgb(210, 210, 210) solid;
+}
+
+.u20 {
+    width: 22.5%;
+    border-top: .5px rgb(210, 210, 210) solid;
+    border-bottom: .5px rgb(210, 210, 210) solid;
+}
+
+.u23 {
+    width: 22.5%;
+    border-top: .5px rgb(210, 210, 210) solid;
+    border-left: .5px rgb(210, 210, 210) solid;
+    border-bottom: .5px rgb(210, 210, 210) solid;
+}
+
+.adult {
+    width: 22.5%;
+    border-radius: 0 10px 10px 0;
+    border: .5px rgb(210, 210, 210) solid;
+}
+
+
+
+/* Match List  */
+
+.matches_list {
+    margin-top: 1rem;
+    margin: 0 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.matches_list_hometeam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    border: 1px black solid;
+}
+
+.matches_list_vs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.matches_list_awayteam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    border: 1px black solid;
+}
+
+/* Match Register */
+
+

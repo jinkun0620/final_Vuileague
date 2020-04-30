@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/matches.css' %}">
+
+
+
+<h1>Matches</h1>
+
+<div class="tap_matches_option">
+    <ul class="matches_option matches_option_list">Match List</ul>
+    <ul class="matches_option matches_option_register">Register Match</ul>
+</div>
+<div class="container_matchlist">
+    <div class="filter_bar">
+        <div class="__innerfilter">
+            <div class="filter01 filter">
+                <div class="province01 filtermenu">Filter by Province/City</div>
+                <div class="province02 filtervalue">Tp.Ho Chi Minh</div>
+            </div>    
+            <div class="filter02 filter">
+                <div class="ward01 filtermenu">Filter by Ward</div>
+                <div class="ward02 filtervalue">Quan 7</div>
+            </div>    
+            <div class="filter03 filter">
+                <div class="pitch01 filtermenu">Filter by Pitch</div>
+                <div class="pitch02 filtervalue">Youth Park, Quan.2</div>
+            </div>    
+            <div class="filter04 filter">
+                <div class="Search01 filtermenu">Search Team</div>
+                <div class="province02 filtervalue"><input type="text" placeholder="Search Team"></div>
+            </div>    
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="match_tap_menu">
+
+        <div class="tap_match_type">
+            <div class="match_type_text">Match Type</div>
+            <ul class="match_type _5566">5 vs 5 / 6 vs 6 </ul>
+            <ul class="match_type _7788">7 vs 7 / 8 vs 8 </ul>
+            <ul class="match_type _1111">11 vs 11</ul>
+        </div>
+
+        <div class="tap_age">
+            <div class="age_text">Age</div>
+            <ul class="age u17">U-17</ul>
+            <ul class="age u20">U-20</ul>
+            <ul class="age u23">U-23</ul>
+            <ul class="age adult">Adult</ul>
+        </div>
+    </div>
+
+
+    <div class="matches_list">
+        
+        <div class="matches_list_hometeam">
+            Home team
+        </div>
+
+        <div class="matches_list_vs"><span>VS</span></div>
+
+        <div class="matches_list_awayteam">
+            Away team
+        </div>
+    
+    </div>
+</div>
+
+
+
+
+
+<div class="container_matchregister">
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        {{form.home}}
+        {{form.member}}
+        {{form.made_on}}
+        <button type="submit">경기 만들기</button>
+    </form>
+</div>
+
+{% endblock %}
